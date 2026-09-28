@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #777;
+}
+
+.hero {
+    height: 220px;
+    background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://hips.hearstapps.com/hmg-prod/images/dawn-at-the-golden-gate-bridge-san-francisco-usa-royalty-free-image-1663588202.jpg?crop=0.88889xw:1xh;center,top&resize=1200:*");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 9px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    background: #ef4b42;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 8px;
+}
+
+.section {
+    width: 70%;
+    max-width: 760px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.section h2 {
+    color: #777;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 7px;
+    color: #aaa;
+    margin-bottom: 22px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.service {
+    width: 110px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+.service-one {
+     background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://play-lh.googleusercontent.com/K9Ofn-XHSIwip6UG043BS-Puy18mvq-ePn3x2bJUgjWwHp4AUwFYQPXqy8z9VSMWOHK1ykDjcoV4Beo9Ey4New=w240-h480-rw");
+}
+
+.service-two {
+      background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://play-lh.googleusercontent.com/8UQsgrB0PUoPuRTJ_v7EZdpatbn1o1pJy44kjDJrgBvQt_QWC1ZobtWzxmugJ0L0wJrLzhJc6Bo4KLeOzznoog");
+}
+
+.service-three {
+   background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://w0.peakpx.com/wallpaper/603/181/HD-wallpaper-ff-new-logo-fire.jpg");
+}
+
+.service-four {
+     background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nPHek-B_CuwGzvraiEpYQJxHJ88JS4R1U8y16gmLKBXzx5ozt2kGnXE&s=10");
+}
+
+.portfolio-section {
+    margin-top: 25px;
+}
+
+.portfolio {
+    width: 540px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 85px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 650px) {
+    .section {
+        width: 90%;
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
